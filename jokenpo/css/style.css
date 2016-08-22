@@ -1,0 +1,110 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: game;
+}
+
+@font-face {
+     font-family: game;
+     src:url(../fonts/game.ttf);
+}
+body{
+	background:url('../img/body.png');
+}
+.repeat{
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-200px;
+	width:400px;
+	height:100%;
+	background:url('../img/list.png') 0px 400px no-repeat;
+}
+.repeat .arcade{
+	position:absolute;
+	top:0;
+	left:0;
+	margin-left:0px;
+	width:100%;
+	height:100%;
+	background:url('../img/bgArcade.png') no-repeat;
+}
+.repeat .arcade ul{
+	position:absolute;
+	top:330px;
+	left:40px;
+}
+.repeat .arcade ul li{
+	float:left;
+	list-style:none;
+}
+.repeat .arcade ul li a{
+	float:left;
+	margin-right:60px;
+	width:60px;
+	height:56px;
+}
+.repeat .arcade ul li.vermelho a{
+	background:url('../img/b1.png') no-repeat bottom;
+}
+.repeat .arcade ul li.vermelho a:active{
+	background:url('../img/b1a.png') no-repeat bottom;
+}
+.repeat .arcade ul li.verde a{
+	background:url('../img/b2.png') no-repeat bottom;
+}
+.repeat .arcade ul li.verde a:active{
+	background:url('../img/b2a.png') no-repeat bottom;
+}
+.repeat .arcade ul li.azul a{
+	background:url('../img/b3.png') no-repeat bottom;
+}
+.repeat .arcade ul li.azul a:active{
+	background:url('../img/b3a.png') no-repeat ;
+}
+.pontuacao{
+    position: absolute;
+	width:205px;
+    top: 107px;
+    left: 94px;
+    color: #ffde00;
+    font-size: 14px;
+}
+.pontuacao span:last-child{
+	float:right;
+}
+.painelJogo{
+	position: absolute;
+	width:205px;
+    top: 160px;
+    left: 94px;
+    color: #ffde00;
+    font-size: 14px;
+}
+.painelJogo .jogador{float:left;}
+.painelJogo .cpu{float:right;}
+.painelJogo span{
+	float:left;
+	margin-top:15px;
+	font-size:25px;
+	width:100%;
+	text-align:center;
+	color: #20d2ff;
+}
